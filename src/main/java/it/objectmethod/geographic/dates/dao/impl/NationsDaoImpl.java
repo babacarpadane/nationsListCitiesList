@@ -8,9 +8,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import it.objectmethod.geographic.dates.dao.NationsDao;
 import it.objectmethod.geographic.dates.models.Nation;
-
+@Component
 public class NationsDaoImpl implements NationsDao {
 	
 	public Connection getConnection() {
